@@ -35,8 +35,7 @@
   width: 300;
 }
 
-.ss-main,
-.breed-select {
+.ss-main.breed-select {
   width: 300;
 }
 .loader-text {
