@@ -35,6 +35,10 @@
   width: 300;
 }
 
+.ss-main,
+.breed-select {
+  width: 300;
+}
 .loader-text {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
