@@ -35,6 +35,7 @@ function addCats() {
         refs.catSlimSelectWrapper = document.querySelector('.ss-main.breed-select');
     }).catch(() => {
         refs.catBreedsEl.classList.add('js-hidden');
+        refs.catSlimSelectWrapper.classList.add('js-hidden');
         refs.loader.classList.add('js-hidden');
         refs.error = document.querySelector('.js-hidden');
         Notiflix.Notify.failure(refs.error.classList.remove('js-hidden'));  
@@ -70,8 +71,10 @@ function oncatBreedsElChange(event) {
         refs.catInfoWrapper.innerHTML = getCatCard(catData[0].breeds[0], catData[0].url);
         refs.loader.classList.add('js-hidden');
         refs.catBreedsEl.classList.remove('js-hidden');
+        refs.catSlimSelectWrapper.classList.remove('js-hidden');
     }).catch(() => {
         refs.catBreedsEl.classList.add('js-hidden');
+        refs.catSlimSelectWrapper.classList.add('js-hidden');
         refs.loader.classList.add('js-hidden');
         Notiflix.Notify.failure('Oops! Something went wrong! Try reloading the page!'); 
     
